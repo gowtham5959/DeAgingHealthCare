@@ -1,0 +1,217 @@
+/* --- Global Styles & Reset --- */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+a {
+    color: #1A5276; /* Professional blue tone */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2E86C1;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
+    color: #1A5276;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #D4E6F1;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #1A5276;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    float: left;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.company-name {
+    font-weight: 300;
+}
+
+.brand-name {
+    color: #F7DC6F; /* Highlight color */
+    font-weight: 700;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+header nav a:hover {
+    color: #F7DC6F;
+}
+
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('placeholder-bg.jpg') no-repeat center center/cover;
+    /* NOTE: Replace 'placeholder-bg.jpg' with a relevant image (data/science/wellness) */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #F7DC6F;
+    color: #1A5276;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #EEDD82;
+}
+
+
+/* --- Innovation & Value Sections --- */
+.grid-3, .grid-2 {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.feature-box {
+    background-color: #F4F6F6;
+    padding: 30px;
+    border-left: 4px solid #1A5276;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box h3 {
+    color: #1A5276;
+    margin-top: 0;
+}
+
+.value-item h4 {
+    color: #2E86C1;
+    font-size: 1.3em;
+    margin-top: 0;
+}
+
+.colored-section {
+    background-color: #EAECEE;
+}
+
+.note {
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+    border: 1px dashed #A9CCE3;
+    background-color: #F4F6F6;
+    color: #1A5276;
+    margin-top: 40px;
+}
+
+
+/* --- Credentials & Contact --- */
+.credentials-list p, .contact-details p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact-details {
+    padding-top: 20px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* --- Clearfix --- */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    .logo, header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+}
